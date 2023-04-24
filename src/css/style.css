@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main-section {
+  height: 800px;
+  padding-top: 16px;
+  background-color: #f0f0f0;
+}
+.main-section__nav-container {
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+}
+
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+}
+.nav-menu__list-item {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */
