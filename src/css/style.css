@@ -13,9 +13,11 @@
 
 /*?Main-section */
 .main-section {
+  position: relative;
   height: 800px;
   padding-top: 16px;
   background-color: #f0f0f0;
+  overflow: hidden;
 }
 .main-section__nav-container {
   display: flex;
@@ -26,6 +28,21 @@
 }
 .main-section__logo {
   width: 134px;
+}
+.main-section__content-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.main-section__first-circle {
+  position: absolute;
+  top: 129px;
+  right: 34px;
+}
+.main-section__second-circle {
+  position: absolute;
+  top: 650px;
+  right: -120px;
 }
 
 .nav-menu__list {
@@ -81,4 +98,118 @@
   border-radius: 100px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: rotate(-36.15deg);
+}
+
+.right-wrapper {
+  position: absolute;
+  z-index: 6;
+  top: 150px;
+  right: 76px;
+  width: 372px;
+}
+.right-wrapper__icons-box {
+  margin-bottom: 1px;
+  padding-left: 10px;
+}
+.right-wrapper__title {
+  margin-bottom: 5px;
+}
+.right-wrapper__text {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 17px;
+       column-gap: 17px;
+}
+.icons__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #5290ea;
+  border-radius: 100px;
+}
+.icons__skype, .icons__vk, .icons__tg, .icons__inst {
+  font-size: 21px;
+  color: #000000;
+}
+
+.title {
+  font-size: 72px;
+  line-height: 68px;
+  color: #000000;
+}
+.title__hr {
+  width: 65px;
+  height: 0px;
+  border: none;
+  border-top: 1px solid #000000;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.buttons__main-btn {
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  background: #f28b64;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.buttons__icon-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  height: 46px;
+  padding-top: 3px;
+}
+.buttons__icon-img {
+  width: 46px;
+  height: 46px;
+}
+.buttons__text {
+  font-size: 16px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 194px;
+  height: 194px;
+  border-radius: 50%;
+  background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%);
+}
+.circle__subtract {
+  width: 129.33px;
+  height: 129.33px;
+  border-radius: 50%;
+  background: #f0f0f0;
+}
+.circle__subtract_big {
+  width: 188px;
+  height: 188px;
+}
+.circle_big {
+  width: 282px;
+  height: 282px;
+  rotate: 45deg;
 }/*# sourceMappingURL=style.css.map */
