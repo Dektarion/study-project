@@ -25,7 +25,7 @@ $white-color: #ffffff;
 
 .main-section {
   position: relative;
-  height: 800px;
+  min-height: 800px;
   padding-top: 16px;
   background-color: $background-color;
   overflow: hidden;
@@ -51,7 +51,7 @@ $white-color: #ffffff;
   &__first-circle {
     position: absolute;
     top: 129px;
-    right: 34px;
+    right: 80px;
   }
 
   &__second-circle {
@@ -249,3 +249,101 @@ $white-color: #ffffff;
     rotate: 45deg;
   }
 }
+
+/*?Second-section */
+
+.second-section {
+  min-height: 700px;
+  // background-color: $white-color;
+
+  &__content-container {
+    position: relative;
+    padding-top: 32px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__cards-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    margin-bottom: 25px;
+  }
+
+  &__icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 60px;
+  }
+
+  &__first-circle {
+    position: absolute;
+    top: 80px;
+    right: -60px;
+    z-index: -1;
+  }
+
+  &__second-circle {
+    position: absolute;
+    top: 364px;
+    left: -60px;
+    z-index: -1;
+  }
+}
+
+.cards-item {
+  display: flex;
+  align-items: flex-end;
+  width: 360px;
+  height: 360px;
+  background-color: $grey-color;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  &__img {
+    height: 335px;
+  }
+
+  &__orange {
+    background-color: $orange-color;
+  }
+
+  &__blue {
+    background-color: $blue-color;
+  }
+
+  &__text {
+    align-self: center;
+    width: 280px;
+    font-size: 36px;
+    text-align: center;
+    transform: rotate(90deg);
+  }
+}
+
+.icons-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+
+  &__img {
+    height: 80px;
+    width: 80px;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $black-color;
+  }
+
+  &__number {
+    font-size: 48px;
+  }
+}
+
+/*?Third-section */
+
