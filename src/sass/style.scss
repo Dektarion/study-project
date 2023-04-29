@@ -174,11 +174,20 @@ $white-color: #ffffff;
   line-height: 68px;
   color: $black-color;
 
+  &_position {
+    position: relative;
+  }
+
   &__hr {
     width: 65px;
     height: 0px;
     border: none;
     border-top: 1px solid $black-color;
+
+    &_top {
+      position: absolute;
+      bottom: 68px;
+    }
   }
 }
 
@@ -247,6 +256,10 @@ $white-color: #ffffff;
     width: 282px;
     height: 282px;
     rotate: 45deg;
+  }
+
+  &_rotate {
+    rotate: -48.2deg;
   }
 }
 
@@ -347,3 +360,54 @@ $white-color: #ffffff;
 
 /*?Third-section */
 
+.third-section {
+  position: relative;
+  z-index: 0;
+  min-height: 640px;
+  background-color: $background-color;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 167px;
+    padding-top: 46px;
+  }
+
+  &__right-wrapper {
+    max-width: 480px;
+  }
+
+  &__right-title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  &__first-circle {
+    position: absolute;
+    z-index: -1;
+    top: 140px;
+    left: 110px;
+  }
+
+  &__figure {
+    position: absolute;
+    z-index: -1;
+    top: 249px;
+    left: 15px;
+  }
+
+  &__second-circle {
+    position: absolute;
+    top: -121px;
+    right: -92px;
+  }
+
+}
