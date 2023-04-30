@@ -1,3 +1,5 @@
+@import './fonts.scss';
+
 $background-color: #f0f0f0;
 $orange-color: #f28b64;
 $blue-color: #5290ea;
@@ -51,7 +53,7 @@ $white-color: #ffffff;
   &__first-circle {
     position: absolute;
     top: 129px;
-    right: 80px;
+    right: 30px;
   }
 
   &__second-circle {
@@ -69,7 +71,10 @@ $white-color: #ffffff;
     column-gap: 64px;
 
     &-item {
+      font-family: 'Montserrat';
       font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
       line-height: 22px;
       list-style: none;
     }
@@ -141,7 +146,10 @@ $white-color: #ffffff;
 
   &__text {
     margin-bottom: 20px;
+    font-family: 'Montserrat';
     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
   }
 }
 
@@ -170,7 +178,10 @@ $white-color: #ffffff;
 }
 
 .title {
+  font-family: 'Montserrat';
   font-size: 72px;
+  font-weight: 600;
+  font-style: normal;
   line-height: 68px;
   color: $black-color;
 
@@ -199,6 +210,9 @@ $white-color: #ffffff;
   &__main-btn {
     width: 200px;
     height: 60px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
     font-size: 18px;
     line-height: 19px;
     text-align: center;
@@ -225,7 +239,10 @@ $white-color: #ffffff;
   }
 
   &__text {
+    font-family: 'Montserrat';
     font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
     line-height: 17px;
     color: $black-color;
   }
@@ -331,9 +348,18 @@ $white-color: #ffffff;
   &__text {
     align-self: center;
     width: 280px;
+    font-family: 'Montserrat';
     font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
     text-align: center;
     transform: rotate(90deg);
+
+    &_position {
+      position: absolute;
+      top: 140px;
+      right: -60px;
+    }
   }
 }
 
@@ -349,12 +375,16 @@ $white-color: #ffffff;
   }
 
   &__text {
+    font-family: 'Montserrat';
     font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
     color: $black-color;
   }
 
   &__number {
     font-size: 48px;
+    font-weight: 600;
   }
 }
 
@@ -387,6 +417,9 @@ $white-color: #ffffff;
 
   &__text {
     margin-bottom: 30px;
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 400;
     font-size: 18px;
   }
 
@@ -409,5 +442,27 @@ $white-color: #ffffff;
     top: -121px;
     right: -92px;
   }
+}
 
+/*?Footer */
+
+.footer {
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 272px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    position: absolute;
+    left: -250px;
+    bottom: 0px;
+  }
 }
