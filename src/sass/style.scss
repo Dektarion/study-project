@@ -14,7 +14,12 @@ $white-color: #ffffff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
+// .body {
+//   scroll-behavior: smooth;
+// }
 
 /*?Container */
 
@@ -78,6 +83,11 @@ $white-color: #ffffff;
       line-height: 22px;
       list-style: none;
     }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $black-color
   }
 }
 
